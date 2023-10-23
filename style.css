@@ -237,3 +237,10 @@ a {
 .cate-links:hover > .icon-cate-links > img {
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 900px) {
+  .grid-1x4 {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2rem;
+  }
+}
