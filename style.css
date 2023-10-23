@@ -23,6 +23,7 @@ a {
 .grid-1x2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 10rem;
 }
 .grid-1x3 {
   display: grid;
@@ -61,8 +62,10 @@ a {
 .top-page {
   background-color: rgb(0, 0, 0, 0.8);
   padding: 1.1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   backdrop-filter: blur(75px);
   -webkit-backdrop-filter: blur(75px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -147,7 +150,7 @@ a {
 @media screen and (max-width: 768px) {
   .grid-1x2 {
     grid-template-columns: 1fr;
-    padding: 2rem 0;
+    padding: 5rem 0;
   }
   .hero-desc {
     text-align: center;
@@ -244,3 +247,13 @@ a {
     margin: 0 2rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .grid-1x4 {
+    grid-template-columns: 1fr;
+    margin: 0 2rem;
+  }
+}
+/* end of top categories section */
+
+/* footer section */
